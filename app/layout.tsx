@@ -1,16 +1,15 @@
-import "./globals.css";
-import type { ReactNode } from "react";
+// app/layout.tsx
 
-export const metadata = {
-  title: "CoderBunnyz Chatbot",
-  description: "Sales chatbot for the CoderBunnyz board game",
-};
+import "./globals.css";
+import { ReactNode } from "react";
+import { headers } from "next/headers";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
+  const pathname = headers().get("x-pathname") || "";
+
   return (
     <html lang="en">
-      {/* keep background simple, widget itself has its own styling */}
-      <body className="m-0 p-0 bg-transparent">
+      <body className={pathname.includes("/embed") ? "" : "bg-[#FCE8D1]"}>
         {children}
       </body>
     </html>

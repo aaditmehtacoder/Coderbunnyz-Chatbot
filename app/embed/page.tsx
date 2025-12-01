@@ -1,11 +1,11 @@
-// app/embed/page.tsx
+"use client";
+
 import ChatBubble from "../../components/ChatBubble";
 
-export default function EmbedWidget() {
+export default function EmbedPage() {
   return (
-    <main className="w-full h-full">
-      {/* Only the floating chat bubble + drawer */}
+    <div className="w-full h-full overflow-hidden">
       <ChatBubble />
-    </main>
+    </div>
   );
 }
