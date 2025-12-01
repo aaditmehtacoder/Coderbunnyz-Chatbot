@@ -175,7 +175,7 @@ export default function ChatDrawer({ open, onClose }: ChatDrawerProps) {
             </button>
           </div>
           <p className="mt-1 text-[10px] text-slate-400">
-            Powered by OpenAI • Chat with the real creator of CoderBunnyz 🐰
+            Chat with the real creator of CoderBunnyz 🐰
           </p>
         </div>
       </motion.div>
