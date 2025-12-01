@@ -9,7 +9,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
   return (
     <html lang="en">
-      <body className={pathname.includes("/embed") ? "" : "bg-[#FCE8D1]"}>
+      <body className={pathname.includes("/embed") ? "" : "bg-[#FCE2C4]"}>
         {children}
       </body>
     </html>
